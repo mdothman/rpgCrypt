@@ -23,26 +23,31 @@
         <div class="settings">
             <div class="setting">
                 <label for="length">Password length</label>
-                <input type="number" id="length" min="4" max="20" value="20" />
+                <input type="range" min="0" max="50" id="slider" />
             </div>
+            <br />
             <div class="setting"><label>Include UPPERCASE letters</label>
-                <input type="checkbox" id="uppercase" checked />
+                <input placeholder="" type="checkbox" id="uppercase" checked />
             </div>
+            <br />
             <div class="setting">
                 <label>Include lowercase letters</label>
                 <input type="checkbox" id="lowercase" checked />
             </div>
+            <br/>
             <div class="setting">
                 <label>Include numbers</label>
                 <input type="checkbox" id="numbers" checked>
             </div>
+            <br />
             <div class="setting">
                 <span>Include symbols</span>
                 <input type="checkbox" id="symbols" checked />
-
             </div>
+            <hr />
         </div>
     </div>
 </body>
+<script src="main.js"></script>
 
 </html>
