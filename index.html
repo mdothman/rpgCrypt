@@ -15,7 +15,7 @@
     <div class="container">
         <h2>Cryptogram</h2>
         <div class="result-container">
-            <span id="result">0</span>
+            <span id="result"></span>
             <button class="btn" id="clipboard">
                 <i class="far  fa-clipboard"></i>
             </button>
@@ -23,7 +23,7 @@
         <div class="settings">
             <div class="setting">
                 <label for="length">Password length</label>
-                <input type="range" min="0" max="50" id="slider" />
+                <input type="number" min="4" max="20" value="20" id="length" />
             </div>
             <br />
             <div class="setting"><label>Include UPPERCASE letters</label>
@@ -46,6 +46,9 @@
             </div>
             <hr />
         </div>
+        <button class="btn btn-large" id="generate">
+            Generate Password
+        </button>
     </div>
 </body>
 <script src="main.js"></script>
